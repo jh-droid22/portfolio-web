@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style1.css"/>
+        <script src="function.js" defer></script>
+        <title> My First Webiste </title>
+    </head>
+<body>
+
+    <nav>
+
+        <div class="logo-container">
+            <img class="logo" src="images/logo.png" alt="Error!">
+            <!--<h2 class="logo-name">JBalacuit</h2>-->
+        </div>
+
+        <div class="links-container">
+            <a class="links" href="#Home">HOME</a>
+            <a class="links" href="#Gallery">GALLERY</a>
+            <a class="links" href="#AboutMe">ABOUT ME</a>
+        </div>
+
+    </nav>
+
+    <section id="Home">
+        <div class="home-section">
+            <h1 class="name">I AM JHUVIN BALACUIT</h1>
+            <h2 class="wev-dev">A WEB DEVELOPER</h2>
+            <a href="#Contacts"><button class="btn-contacts"> Contact Me </button></a>
+        </div>
+    </section>
+
+
+    <section id="Gallery">
+        <h1 class="g-name"> Gallery </h1>
+        <div class="gallery-section">
+            <img src="images/image1.jpg" alt="Error!"/>
+            <img src="images/image2.jpg" alt="Error!"/>
+            <img src="images/image3.jpg" alt="Error!"/>
+            <img src="images/image7.jpeg" alt="Error!"/>
+            <img src="images/image5.jpeg" alt="Error!"/>
+            <img src="images/image6.jpeg" alt="Error!"/>
+            <img src="images/image4.jpeg" alt="Error!"/>
+            <img src="images/image8.jpeg" alt="Error!"/>
+            <img src="images/image9.jpeg" alt="Error!"/>
+            <img src="images/image10.jpeg" alt="Error!"/>
+        </div>
+    </section>
+
+        <!-- Popup Modal Gallery -->
+        <div id="popupModal" class="modal">
+            <span class="close">&times;</span>
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+            <img class="modal-content" id="popupImg">
+        </div>
+
+    <section id="AboutMe">
+        <h1 class="about-name"> About Me </h1>
+        <div class="about-section">
+            <img class="about-me-profile" id="aboutMeImage" src="images/about-me-profile.jpg" alt="Error!"/>
+            <p class="aboutme-text">Im Jhuvin P. Balacuit, im 21 years old live in <br/>
+                            Brgy, Caloc-an P-4 Magallanes ADN and im <br/>
+                            a humble, nice and responsible person and <br/>
+                            my hobbies is watching movies, watching anime, <br/>
+                            biking and mostly singing because i like music.</p>
+
+            <!-- Put the menu inside this container -->
+            <div class="about-menu" id="aboutMenu">
+                <ul>
+                    <li id="personalInfoBtn">Personal Information</li>
+                    <li>Singing Covers</li>
+                    <li id="skillsBtn">Skills</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+            <!-- Personal Info Popup Modal -->
+            <div id="personalInfoModal" class="modal">
+                <div class="modal-content personal-info-modal-box">
+                    <span id="closePersonalInfo" class="close">&times;</span>
+                    <h2>Personal Information</h2>
+                    <p><strong>Name:</strong> Jhuvin P. Balacuit</p>
+                    <p><strong>Age:</strong> 22</p>
+                    <p><strong>Gender:</strong> Male</p>
+                    <p><strong>Birthday:</strong> May 21, 2003</p>
+                    <p><strong>Address:</strong> P-4 Brgy Caloc-an, Magallanes Agusan del Norte</p>
+                    <p><strong>Contact Number:</strong> 09XX-XXX-XXXX</p>
+                    <p><strong>Email:</strong> jhuvin.balacuit@normi.edu.ph</p>
+                    <p><strong>Civil Status:</strong> Single</p>
+                    <p><strong>Nationality:</strong> Filipino</p>
+                </div>
+            </div>
+
+            <!-- Singing Covers Popup Modal -->
+            <div id="singingCoversModal" class="modal">
+                <div class="modal-content singing-covers-modal-box">
+                    <span id="closeSingingCovers" class="close">&times;</span>
+                    
+                    <h2>My Singing Covers</h2>
+
+                    <h3>Video Covers</h3>
+                    <div class="video-list">
+                        <video controls>
+                            <source src="videos/Binibini - (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Romantic Homicide - (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Pasilyo - short (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Ipagpatawad Mo - short (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Hanggang Kailan - short (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Hoodie - short (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Yakap Sa Dilim - (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Once More - (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Here With Me - (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Salamin²  - short (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Until I Found You - (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Kahit Maputi Na Ang Buhok Ko - short (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Lighters - short (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Sundo - short (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Huwag Na Huwag Mong Sasabihin - short (cover).mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="videos/Ikaw At Ako - short (cover).mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                    <h3>Audio Covers</h3>
+                    <div class="audio-list">
+                        
+                        <div class="album-container">
+                            <img src="images/Best Part album cover.jpg" alt="Error!">
+                        </div>
+                        <audio controls>
+                            <source src="audios/Best Part - short (cover).m4a" type="audio/mp4">
+                        </audio>
+
+                        <div class="album-container">
+                            <img src="images/The Day You Said Goodnight album cover.jpg" alt="Error!">
+                        </div>
+                        <audio controls>
+                            <source src="audios/The Day You Said Goodnight - short (cover).m4a" type="audio/mp4">
+                        </audio>
+
+                        <div class="album-container">
+                            <img src="images/Nangangamba album cover.jpg" alt="Error!">
+                        </div>
+                        <audio controls>
+                            <source src="audios/Nangangamba - short (cover).m4a" type="audio/mp4">
+                        </audio>
+
+                        <div class="album-container">
+                            <img src="images/Stuck With U album cover.jpg" alt="Error!">
+                        </div>
+                        <audio controls>
+                            <source src="audios/Stuck With U - (cover).m4a" type="audio/mp4">
+                        </audio>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Popup Modal -->
+            <div id="skillsModal" class="modal">
+                <div class="modal-content skills-modal-box">
+                    <span id="closeSkillsModal" class="close">&times;</span>
+                    <h2>My Skills</h2>
+                    <ul>
+                        <li class="skills-text-html"><img class="logo-html" src="images/html logo.png" alt="Error!"><strong>HTML</strong> – Structuring websites</li>
+                        <li class="skills-text-css"><img class="logo-css" src="images/css logo.png" alt="Error!"><strong>CSS</strong> – Styling and layout</li>
+                        <li class="skills-text-figma"><img class="logo-figma" src="images/figma logo.png" alt="Error!"><strong>Figma</strong> – UI/UX Design and Prototyping</li>
+                    </ul>
+                </div>
+            </div>
+
+    <section id="Contacts">
+        <h1 class="contact-name"> Contacts </h1>
+        <div id="direct-contact">
+            <p class="direct-txt"><img class="send-logo" src="images/send logo.png" alt="Error!"> jhuvin.balacuit@normi.edu.ph</p>
+            <p class="direct-txt"><img class="telephone-logo" src="images/telephone logo.png" alt="Error!"> 09272844926</p>
+        </div>
+
+        <div id="social-contact-icons">
+            <a href="https://www.facebook.com/jhuvin.balacuit"><img class="fb-link" src="images/facebook.png" alt="Error!"></a>
+            <a href="https://www.instagram.com/keisuke4671?igsh=MWEycmxhNmNpNnZmeA=="><img class="insta-link" src="images/instagram.png" alt="Error!"></a>
+            <a href="https://www.tiktok.com/@auwuwuw_21?_r=1&_t=ZS-94URYRohjnE"><img class="tiktok-link" src="images/tiktok.png" alt="Error!"></a>
+        </div>
+
+        <div id="form-container">
+            
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                
+                <input type="hidden" name="access_key" value="717776e7-da96-44ee-98bf-86538258ff26">
+                
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea class="txt-msg" name="message" placeholder="Your Message" required></textarea>
+                <input class="btn-submit" type="submit" value="send">
+            </form>
+        </div>
+    </section>
+
+    
+</body>
+</html>

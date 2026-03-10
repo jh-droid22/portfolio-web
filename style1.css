@@ -1,0 +1,660 @@
+body{
+    margin: 0;
+    background-color: #232323;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.logo{
+    background-color: white;
+    position: relative;
+    top: 15px;
+    left: 25px;
+    width: 45px;
+    display: inline-block;
+    margin: 0;
+}
+
+/*
+.logo-name{
+    font-family: Arial;
+    display: inline-block;
+    color: white;
+    left: 35px;
+    margin: 0;
+    position: relative;
+    top: 5px;
+}
+*/
+
+.links-container{
+    text-align: center;
+    position: relative;
+    bottom: 17px;
+    margin: 0px 30px;
+}
+
+.links{
+    text-decoration: none;
+    padding: 0px 20px;
+    font-family: Verdana;
+    font-weight: bold;
+    color: white;
+}
+
+.links:hover{
+    background-color: gold;
+    padding: 8px 20px;
+}
+
+/* Home Section */
+
+#Home{
+    height: 840px;
+    background-color: #36454f;
+}
+
+.home-section{
+    text-align: center;
+    position: relative;
+    top: 250px;
+}
+
+.name{
+    margin: 0;
+    font-family: Georgia;
+    font-size: 55px;
+}
+
+.wev-dev{
+    margin: 0;
+    color: skyblue;
+    font-family: Verdana;
+    font-size: 45px;
+    position: relative;
+    top: 15px;
+}
+
+.btn-contacts{
+    background-color: transparent;
+    padding: 12px 30px;
+    color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.btn-contacts:hover{
+    background-color: #1e90ff;
+    cursor: pointer;
+    color: black;
+    box-shadow: 0 0 5px #1e90ff, 0 0 10px #1e90ff, 0 0 15px #1e90ff;
+
+}
+
+/* Gallery Section */
+
+#Gallery{
+    height: 1600px;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    background-color: #36454F;
+}
+
+.g-name{
+    color: white;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font-size: 40px;
+    font-family: Georgia;
+}
+
+.gallery-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.gallery-section img{
+    width: 350px;
+    height: 270px;
+    margin: 5px;
+    margin-top: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 8px  solid black;
+}
+
+.gallery-section img:hover{
+    transform: scale(1.04);
+}
+
+/* Popup Modal Gallery And About Me */
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 2000;
+    padding-top: 65px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px white;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover {
+    color: red;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.3s;
+    user-select: none;
+    z-index: 2001;
+    display: block;
+}
+
+.prev:hover, .next:hover {
+    color: red;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* About Section */
+
+#AboutMe{
+    height: 840px;
+    background-color: #36454f;
+    margin-top: 40px;
+}
+
+.about-name{
+    color: white;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font-size: 40px;
+    font-family: Georgia;
+}
+
+.about-section{
+    position: relative;
+}
+
+.about-me-profile{
+    width: 48%;
+    position: relative;
+    cursor: pointer;
+    margin-top: 120px;
+    margin-left: 40px;
+    border: solid black 10px;
+}
+
+.aboutme-text{
+    text-align: justify;
+    display: inline-block;
+    position: relative;
+    bottom: 160px;
+    font-family: Arial;
+    left: 35px;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 25px;
+}
+
+/* About Me Menu Pop-Up */
+
+.about-menu {
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    margin-top: 120px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px white;
+    display: none;
+    z-index: 1;
+}
+
+.about-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-menu li {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #232323;
+}
+
+.about-menu li:hover {
+    color: #1e90ff;
+}
+
+/* About Me Personal Info Popup Modal */
+
+.personal-info-modal-box {
+    background-color: white;
+    color: #232323;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px white;
+    line-height: 1.8;
+    bottom: 20px;
+    position: relative;
+}
+
+#personalInfoModal {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#personalInfoModal .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
+/* About Me Singing Covers Modal */
+
+#singingCoversModal {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto; /* scrollable */
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 0;
+}
+
+.singing-covers-modal-box {
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    border-radius: 0;
+    width: auto;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: none;
+    line-height: 1.8;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.singing-covers-modal-box h2 {
+    display: block;
+    width: 40%;
+    padding: 15px 0;
+    border: 3px solid gold;
+    background-color: rgba(255, 215, 0, 0.15);
+    color: gold;
+    font-size: 30px;
+    margin: 20px auto;
+}
+
+.singing-covers-modal-box h3 {
+    display: block;
+    width: 40%;
+    padding: 5px 0;
+    margin: 30px auto 10px;
+    font-size: 26px;
+}
+
+.singing-covers-modal-box h3:nth-of-type(1) {
+    border: 2px solid #1e90ff;
+    background-color: rgba(30, 144, 255, 0.15);
+    color: #1e90ff;
+}
+
+.singing-covers-modal-box h3:nth-of-type(2) {
+    border: 2px solid #32cd32;
+    position: relative;
+    top: 30px;
+    background-color: rgba(50, 205, 50, 0.15);
+    color: #32cd32;
+}
+
+.video-list video {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    position: relative;
+    top: 30px;
+}
+.audio-list audio {
+    display: block;
+    position: relative;
+    top: 40px;
+    margin: 20px auto;
+}
+
+.audio-list {
+    padding-bottom: 90px; /* extra space so last audio is fully visible */
+}
+
+/* Close button default (fixed while scrolling) */
+#closeSingingCovers {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: top 0.3s ease;
+    z-index: 4000;
+}
+
+#closeSingingCovers:hover {
+    color: red;
+}
+
+/* At bottom — move close button down */
+#closeSingingCovers.bottom-position {
+    top: auto;
+    bottom: 20px;
+}
+
+
+/* About Me Skills Modal Popup */
+
+.skills-modal-box {
+    background-color: white;
+    color: #232323;
+    padding: 70px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    margin: 5% auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 10px white;
+    line-height: 1.8;
+    position: relative;
+}
+
+#skillsModal {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#skillsModal .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
+.logo-html{
+    width: 30px;
+    padding-right: 9px;
+    position: relative;
+    top: 11px;
+}
+
+.logo-css{
+    width: 30px;
+    padding-right: 9px;
+    position: relative;
+    top: 11px;
+}
+
+.logo-figma{
+    width: 48px;
+    height: 52px;
+    padding-left: 17px;
+    margin: 0;
+    position: relative;
+    top: 19px;
+}
+
+
+.skills-text-html{
+    position: relative;
+    text-indent: -5px;
+}
+
+.skills-text-css{
+    position: relative;
+    text-indent: -5px;
+}
+
+.skills-text-figma{
+    position: relative;
+    bottom: 15px;
+    text-indent: -32px;
+}
+
+.skills-modal-box ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Contact Section */
+
+#Contacts{
+    height: 870px;
+    background-color: #36454f;
+    margin-top: 40px;
+}
+
+.contact-name{
+    color: white;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font-size: 40px;
+    font-family: Georgia;
+}
+
+#social-contact-icons{
+    text-align: center;
+    position: relative;
+    top: 90px;
+}
+
+#social-contact-icons img {
+    transition: transform 0.3s ease-in-out;
+    padding: 5px; 
+}
+
+#social-contact-icons img:hover {
+    transform: translateY(-10px); 
+}
+
+.fb-link{
+    width: 50px;
+}
+
+.insta-link{
+    width: 50px;
+}
+
+.tiktok-link{
+    width: 50px;
+}
+
+#direct-contact{
+    margin: 0;
+    top: 60px;
+    position: relative;
+    display: inline-block;
+    left: 39%;
+}
+
+.direct-txt{
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.send-logo{
+    width: 45px;
+    position: relative;
+    padding: 0px 5px;
+    top: 15px;
+}
+
+.telephone-logo{
+    width: 43px;
+    padding: 0px 5px;
+    position: relative;
+    top: 15px;
+}
+
+#form-container{
+    text-align: center;
+    position: relative;
+    top: 110px;
+}
+
+input{
+    display: block;
+    width: 34.90%;
+    height: 40px;
+    margin: 10px auto;
+}
+
+
+.txt-msg{
+    width: 35%;
+    font-family: Arial;
+    height: 190px;
+}
+
+.btn-submit{
+    width: 10%;
+    height: 45px;
+    cursor: pointer;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Album container (normal state: square) */
+.album-container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    display: inline-block;
+    overflow: hidden;
+    border: 4px solid #222; /* moved from .spin so size stays the same */
+    box-sizing: border-box; /* ensure border is included in size */
+}
+
+/* Image inside album container */
+.album-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Spinning state: only changes shape + rotates */
+.spin {
+    animation: spin 4s linear infinite;
+    border-radius: 50%;
+}
+
+/* Tiny center hole */
+.spin::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    background: #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    pointer-events: none;
+}
